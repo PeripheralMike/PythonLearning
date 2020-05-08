@@ -1,0 +1,29 @@
+# Learning Python through A Cloud Guru
+# Exercise 2.4
+# Create a list of all the cards in a 52 card deck
+# Starting with one, keep doubling a number until it is at least a
+# trillion (12 zeros) and how many iterations did it take?
+
+# List of card in a deck
+# Daimond, Spade, Club, Heart
+
+# Make a list of the suits, then make a list of the numbers. Then use a for
+# loop to join them both
+suits = ['Daimonds', 'Spades', 'Clubs', 'Hearts']
+card = ['Ace', 'Two', 'Three', 'Four', "Five", "Six", "Seven", "Eight", "Nine",
+        "Ten", "Jack", "Queen", "King"]
+for s in suits:
+    for c in card:
+        print("Is the " + c + " of " + s + " your card?")
+
+# Keep doubling a number until it is a trillion. How many innterations
+# did it take?
+
+number = 1
+count = 1
+while number <= 1000000000000:
+    Double = number * 2
+    print("Number" + "=" + str(number) + "; " + "Double" + "=" +
+          str(Double) + "; " + "Count=" + str(count))
+    number = Double
+    count += 1
