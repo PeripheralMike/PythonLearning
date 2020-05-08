@@ -1,0 +1,33 @@
+# Learning Python through A Cloud Guru
+# Exercise 2.6
+# EXERCISES
+# write a function called 'igpay'
+# - take a work, return the Pig LAtin "translation"
+# - for example "pig" becomes "igpay" if the first letter is a consenennt, move
+# that to the end and add 'ay' to the end
+# - for example "apple" becomes "appleway" if the first letter is a vowel, add
+# 'way' to the end of that word
+
+# Write a function called 'numerus'
+# takse roman numerals, and output arabic numerals
+# "xiv" = 14
+# "mmxlix" = 2049
+
+# NOTE: i = 1
+# v = 5
+# x = 10
+# l = 50
+# c = 100
+# m = 1000
+
+
+def igpay(a_word):
+    vowels = "aeiouAEIOU"
+    if a_word[0] in vowels:
+        return a_word + "way"
+     else:
+        return a_word[1:] + a_word[0] + "ay"
+
+
+dinosaur - inosaurday
+apple - appleway
