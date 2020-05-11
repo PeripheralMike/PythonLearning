@@ -20,12 +20,11 @@
 # c = 100
 # m = 1000
 
-
 def igpay(a_word):
-    vowels = "aeiouAEIOU"
+    vowels = ["a", "e", "i", "o", "u"]
     if a_word[0] in vowels:
         return a_word + "way"
-     else:
+    else:
         return a_word[1:] + a_word[0] + "ay"
 
 
